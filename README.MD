@@ -38,6 +38,7 @@ eg. download **VIA/FFMPEG** [here](https://pan.baidu.com/s/1dQZ_CCEImVipxRAjD5tg
 **sh extract_rgb_frames_ffmpeg.sh**
 6. Run `video2img.py` to segregate the files that need to be annotated.
 7. Start the annotation task by running `via-3.0.11/via_video_annotator.html`. **use link above to download VIA**
+![Alt text](result_plot/via.PNG)
 8. Convert the annotation data to AVA format by running the following script. Make sure to specify the path to the CSV file generated in step 7.
 
 
@@ -59,8 +60,12 @@ The training logs and models will be stored in `./tools/work_dirs/ava`.
 
 You can test the model using the `./demo` directory. The author specifically uses `demo_spatiotemporal_det.py`.
 
-For log analysis, use the tools available in `./tools/analysis`.
+For log analysis, use the tools available in `./tools/analysis`.  
+This project analysis result on "./result_plot"
 
+**Sample images:**
+![Alt text](result_plot/result_1.png)
+![Alt text](result_plot/result_2.png)
 
 ## Additional Resources
 
