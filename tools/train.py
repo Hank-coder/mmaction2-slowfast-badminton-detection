@@ -21,7 +21,8 @@ from mmaction.utils import (collect_env, get_root_logger,
                             register_module_hooks, setup_multi_processes)
 
 """ Parameters:
-C:\\Users\\12084\\OneDrive\\桌面\\pytorch\\model\\mmaction2-master\\configs\\detection\\ava\\my_slowfast_kinetics_pretrained_r50_4x16x1_20e_ava_rgb_custom_classes.py
+C:\\Users\\12084\\OneDrive\\桌面\\pytorch\\model\\mmaction2-master\\configs\\detection\\ava\\my_slowfast_kinetics_pretrained_r50_4x16x1_20e_ava_rgb_custom_classes_new.py
+--validate
 """
 
 
