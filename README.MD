@@ -24,11 +24,12 @@ This project uses MMAction2 with the SlowFast model for badminton action detecti
 
 ## Data Preparation
 
-All the data preparation steps should be performed in the `./data` directory.
+All the data preparation steps should be performed in the `./data` directory. 
+eg. download ffmpeg [here](https://pan.baidu.com/s/1dQZ_CCEImVipxRAjD5tgnw?pwd=u4dq) in data folder
 
 1. **Step 1:** Place video files in `data/ava/videos`.
 2. Install ffmpeg and set up the environment variables.   
-**pip install ffmpeg**
+**pip install ffmpeg** or download on link above
 3. Install Git Bash to give Windows a Linux-like environment. [here](https://gitforwindows.org/)
 4. Open a Git Bash terminal by right-clicking and choose 'Git Bash Here'. 
    Run the following script to cut selected videos.  
@@ -64,3 +65,5 @@ For log analysis, use the tools available in `./tools/analysis`.
 ## Additional Resources
 
 For more detailed information about training and testing, please refer to the [MMAction2 Documentation](https://github.com/open-mmlab/mmaction2).
+
+checkpoints: [here](https://pan.baidu.com/s/1dQZ_CCEImVipxRAjD5tgnw?pwd=u4dq) in work_dirs folder
