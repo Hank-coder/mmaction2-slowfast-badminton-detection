@@ -24,7 +24,7 @@ This project uses MMAction2 with the SlowFast model for badminton action detecti
 
 ## Data Preparation
 
-All the data preparation steps should be performed in the `./data` directory. 
+All the data preparation steps should be performed in the `./data` directory.  
 eg. download **VIA/FFMPEG** [here](https://pan.baidu.com/s/1dQZ_CCEImVipxRAjD5tgnw?pwd=u4dq) in data folder
 
 1. **Step 1:** Place video files in `data/ava/videos`.
