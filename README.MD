@@ -25,11 +25,11 @@ This project uses MMAction2 with the SlowFast model for badminton action detecti
 ## Data Preparation
 
 All the data preparation steps should be performed in the `./data` directory. 
-eg. download ffmpeg [here](https://pan.baidu.com/s/1dQZ_CCEImVipxRAjD5tgnw?pwd=u4dq) in data folder
+eg. download **VIA/FFMPEG** [here](https://pan.baidu.com/s/1dQZ_CCEImVipxRAjD5tgnw?pwd=u4dq) in data folder
 
 1. **Step 1:** Place video files in `data/ava/videos`.
 2. Install ffmpeg and set up the environment variables.   
-**pip install ffmpeg** or download on link above
+**pip install ffmpeg** or use link above
 3. Install Git Bash to give Windows a Linux-like environment. [here](https://gitforwindows.org/)
 4. Open a Git Bash terminal by right-clicking and choose 'Git Bash Here'. 
    Run the following script to cut selected videos.  
@@ -37,7 +37,7 @@ eg. download ffmpeg [here](https://pan.baidu.com/s/1dQZ_CCEImVipxRAjD5tgnw?pwd=u
 5. Run the following script to extract frames from the cut videos.  
 **sh extract_rgb_frames_ffmpeg.sh**
 6. Run `video2img.py` to segregate the files that need to be annotated.
-7. Start the annotation task by running `via-3.0.11/via_video_annotator.html`.
+7. Start the annotation task by running `via-3.0.11/via_video_annotator.html`. **use link above to download VIA**
 8. Convert the annotation data to AVA format by running the following script. Make sure to specify the path to the CSV file generated in step 7.
 
 
@@ -66,4 +66,4 @@ For log analysis, use the tools available in `./tools/analysis`.
 
 For more detailed information about training and testing, please refer to the [MMAction2 Documentation](https://github.com/open-mmlab/mmaction2).
 
-checkpoints: [here](https://pan.baidu.com/s/1dQZ_CCEImVipxRAjD5tgnw?pwd=u4dq) in work_dirs folder
+Checkpoints: [here](https://pan.baidu.com/s/1dQZ_CCEImVipxRAjD5tgnw?pwd=u4dq) in work_dirs folder
