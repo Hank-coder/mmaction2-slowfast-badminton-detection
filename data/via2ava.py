@@ -104,7 +104,7 @@ def transformer(origin_csv_path, frame_image_dir,
     information_array = np.array(information_array, dtype=object).transpose()
     # information_array = np.array(information_array)
     # -----------------------------------------------------------------------------------------------
-    num_train = int(dataset_percent * len(information_array))
+    num_train = int(dataset_percent*len(information_array))
     train_info_array = information_array[:num_train]
     valid_info_array = information_array[num_train:]
     get_pkl_csv(train_info_array, train_output_pkl_path, train_output_csv_path, exclude_train_output_csv_path, frame_image_dir)
@@ -240,7 +240,7 @@ transformer("./ava/Unnamed-VIA Project31Aug2023_16h31m56s_export.csv", './ava/la
             './ava/annotations/ava_dense_proposals_train.FAIR.recall_93.9.pkl', './ava/annotations/ava_train_v2.1.csv',
             './ava/annotations/ava_dense_proposals_val.FAIR.recall_93.9.pkl', './ava/annotations/ava_val_v2.1.csv',
             './ava/annotations/ava_train_excluded_timestamps_v2.1.csv', './ava/annotations/ava_val_excluded_timestamps_v2.1.csv',
-            './ava/annotations/ava_action_list_v2.1.pbtxt', './ava/annotations/labelmap.txt', 1.0)
+            './ava/annotations/ava_action_list_v2.1.pbtxt', './ava/annotations/labelmap.txt', 0.9)
 print(showpkl('./ava/annotations/ava_dense_proposals_train.FAIR.recall_93.9.pkl'))
 print(showcsv('././ava/annotations/ava_train_v2.1.csv'))
 print(showlabelmap('././ava/annotations/labelmap.txt'))
