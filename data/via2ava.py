@@ -57,7 +57,7 @@ from matplotlib.pyplot import contour, show
 import numpy as np
 import cv2
 from sklearn.utils import shuffle
-
+import random
 
 def transformer(origin_csv_path, frame_image_dir,
                 train_output_pkl_path, train_output_csv_path,
@@ -102,6 +102,10 @@ def transformer(origin_csv_path, frame_image_dir,
             count += 1
     # 将：对应帧图片名字、物体位置信息、动作种类信息汇总为一个信息数组
     information_array = np.array(information_array, dtype=object).transpose()
+
+    # 随机排列数组
+    random.shuffle(information_array)
+
     # information_array = np.array(information_array)
     # -----------------------------------------------------------------------------------------------
     num_train = int(dataset_percent*len(information_array))
